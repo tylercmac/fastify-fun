@@ -1,0 +1,29 @@
+{
+  "name": "fastify-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylercmac/fastify-fun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylercmac/fastify-fun/issues"
+  },
+  "homepage": "https://github.com/tylercmac/fastify-fun#readme",
+  "dependencies": {
+    "fastify": "^3.18.0",
+    "fastify-swagger": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
