@@ -27,8 +27,17 @@ const addItem = (req, reply) => {
   reply.code(201).send(item);
 }
 
+const removeItem = (req, reply) => {
+  const { id } = req.params;
+
+  itemArr = itemArr.filter(item => item.id !== id);
+
+  reply.send({message: `item ${id} deleted`});
+}
+
 module.exports = {
   getItems,
   getItem,
-  addItem
+  addItem,
+  removeItem
 }
