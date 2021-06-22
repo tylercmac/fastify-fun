@@ -14,8 +14,12 @@ Content-Type: application/json
 
 ### delete single item
 DELETE http://localhost:3005/items/3 HTTP/1.1
+
+
+### update single item
+PUT http://localhost:3005/items/3 HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "new item"
+  "name": "updated item"
 }
