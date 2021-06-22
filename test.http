@@ -1,5 +1,13 @@
 ### Get all items
-GET http://localhost:3005/items/ HTTP/1.1
+GET http://localhost:3005/items HTTP/1.1
 
 ### Get single item
 GET http://localhost:3005/items/1 HTTP/1.1
+
+### add single item
+POST http://localhost:3005/items HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "new item"
+}
